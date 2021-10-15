@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #3a3a3a;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(167, 214, 255);
+    text-align: center;
+    margin-top: 10%;
+    padding-bottom: 15%;
+    min-height: 100vh;
+}
+
+.hero{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 90px;
+    color: rgb(53, 44, 65);
+}
+
+.search-input{
+    border-radius: 30px;
+    padding: 1rem;
+    border: none;
+    background-color: whitesmoke;
+    width: 300px;
+    font-size: 22px;
+    display: inline;
+}
+
+.search-btn{
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: .75rem;
+    border-radius: 20px;
+    font-size: 24px;
+    border: none;
+    color: white;
+}
+
+.search-all{
+    background-color: rgb(0, 132, 255);
+}
+
+.search-specific{
+    background-color: tomato;
+}
+
+.airplane{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    z-index: -1;
+    height: 90%;
+    width: auto;
+}
+
+/* FLIGHT LIST */
+
+.flight-container{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 350px 350px; 
+    grid-template-rows: auto auto; 
+    grid-template-areas: ". . .";
+    grid-gap: 90px;
+    margin: 0 auto;
+    padding: 1em;
+    margin-top: 50px;
+}
+
+.card{
+    padding-top: 10px;
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.airline-logo{
+    max-width: 90%;
+    max-height: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    height: auto;
+    display: block;
+}
+
+.airline{
+    font-size: 24px;
+    font-weight:300;
+}
+
+.from-to{
+    font-size: 30px;
+}
+
+.info-container{
+    display: grid;
+    grid-template-columns: 150px 150px; 
+    grid-template-rows: 50px 50px; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". ."
+        ". ."; 
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 80%;
+}
+
+.info-container p {
+    font-size: 18px;
+}
+
+.book-flight{
+    display: block;
+    margin: 0 auto;
+    padding: .75rem;
+    width: 200px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    border: none;
+    background-color: tomato;
+    color: white;
+}
+
+.book-flight:hover{
+    background-color: #ff4d2d;
+}
+
+
+/* BOOK SEAT */
+
+.seat-container{
+    border: 1px solid transparent;
+    width: 1700px;
+    height: 300px;
+    margin: 0 auto;
+    background-image: url("./img/airplane.png");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+
+.seats-def{
+    margin: 0 auto;
+    margin-top: 115px;
+    margin-right: 3vw;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+
+.seats-abc{
+    margin: 0 auto;
+    margin-top: 65px;
+    margin-right: 3vw;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}  
+
+.column-def  div{
+    background-color: transparent;
+    transform: rotate(-90deg);
+    -webkit-transform-origin: 50%  51%;
+    margin: 0px;
+}
+
+.column-abc div{
+    background-color: transparent;
+    transform: rotate(-90deg);
+    -webkit-transform-origin: 50%  51%;
+    margin: 0px;
+}
+
+.column{
+    /* border: 1px solid black; */
+    display: inline-block;
+    transform: rotate(90deg);
+    margin: -9px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+    z-index: 1 !important;
+}
+
+.column-number{
+    position: absolute;
+    left: -20px;
+    display: inline-block;
+    padding-bottom: 20px;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.seat{
+    background-color:rgb(83, 178, 255);
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin: 1px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+
+.occupied{
+    background-color: tomato !important;
+}
+
+.selected{
+    background-color: #6ee052;
+}
+
+.book-info-container{
+    display: grid;
+    grid-template-columns: 150px 150px; 
+    grid-template-rows: 50px 50px; 
+    grid-template-areas:
+     ". . .",
+     ". . .";
+    grid-column-gap: 15vw;
+    grid-row-gap: 50px;
+    margin: 0 auto;
+    width: 45.5%;
+}
+
+.book-input{
+    border-radius: 30px;
+    padding: 1rem;
+    border: none;
+    position: relative;
+    background-color: whitesmoke;
+    width: 20vw;
+    margin: auto;
+    font-size: 22px;
+}
+
+.setPassenger{
+    width: 350px;
+    background-color: tomato;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: white;
+}
